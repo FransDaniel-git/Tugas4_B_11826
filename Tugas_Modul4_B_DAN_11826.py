@@ -54,11 +54,10 @@ if uploaded_file is not None:
     st.dataframe(input_data)
     
     #direktori tempat penyimpanan ketiga model yang telah di dump sebelumnya
-    model_directory = r"C:\Users\LENOVO\Downloads\Unsupervised Learning (Praktek)\Unsupervised Learning (Praktek)\Tugas4_B_11826"
     model_path = {
-        "AGG_model" : os.path.join(model_directory, r'AGG_model.pkl'),
-        "KMeans_model" : os.path.join(model_directory, r'KMeans_model.pkl'),
-        "DBSCAN_model" : os.path.join(model_directory, r'DBSCAN_model.pkl'),
+        "AGG_model" : 'AGG_model.pkl',
+        "KMeans_model" : 'KMeans_model.pkl',
+        "DBSCAN_model" : 'DBSCAN_model.pkl',
     }
     
     #load model ketiga model ke dalam dictionary
